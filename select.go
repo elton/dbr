@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"strconv"
 
-	"github.com/gocraft/dbr/v2/dialect"
+	"github.com/elton/dbr/v2/dialect"
 )
 
 // SelectStmt builds `SELECT ...`.

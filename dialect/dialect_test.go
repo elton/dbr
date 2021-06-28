@@ -78,7 +78,7 @@ func TestMSSQL(t *testing.T) {
 	}
 }
 
-func TestClickhouse(t *testing.T) {
+func TestClickHouse(t *testing.T) {
 	for _, test := range []struct {
 		in   string
 		want string
@@ -92,6 +92,6 @@ func TestClickhouse(t *testing.T) {
 			want: "`col`",
 		},
 	} {
-		require.Equal(t, test.want, Clickhouse.QuoteIdent(test.in))
+		require.Equal(t, test.want, ClickHouse.QuoteIdent(test.in))
 	}
 }

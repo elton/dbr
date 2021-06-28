@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/gocraft/dbr/v2/dialect"
+	"github.com/elton/dbr/v2/dialect"
 )
 
 // InsertStmt builds `INSERT INTO ...`.
