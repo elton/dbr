@@ -7,6 +7,7 @@ jobs:
           - DBR_TEST_MYSQL_DSN=root:root@tcp(127.0.0.1:3306)/circle_test
           - DBR_TEST_POSTGRES_DSN=postgres://postgres:mysecretpassword@127.0.0.1:5432/postgres?sslmode=disable
           - DBR_TEST_MSSQL_DSN=sqlserver://sa:qwe123QWE@127.0.0.1/?database=master
+          - DBR_TEST_CLICKHOUSE_DSN=http://localhost:8123/crm?debug=true
           - GO111MODULE=on
       - image: percona:5.7
         environment:
